@@ -1,5 +1,5 @@
 document.getElementById('downloadBtn').addEventListener('click', function () {
-    window.open('https://github.com/shivadey108P/cv/raw/refs/heads/main/assets/resume-shiva-dey.docx', '_blank');
+    window.open('assets/resume-shiva-dey.pdf', '_blank');
 });
 
 
@@ -34,9 +34,23 @@ document.querySelector('.dropdown').addEventListener('mouseleave', function () {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 
-document.getElementById('hamburger-menu').addEventListener('click', function () {
-    const navLinks = document.getElementById('nav-links');
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
 });
 
+document.addEventListener('click', (event) => {
+    if (!hamburger.contains(event.target) && !navLinks.contains(event.target)) {
+        navLinks.classList.remove('open');
+    }
+});
 
+const nav_elements = document.querySelector('#nav-links').children;
+
+Array.from(nav_elements).forEach(element => {
+    element.addEventListener('click', (event) => {
+        navLinks.classList.remove('open');
+    });
+});

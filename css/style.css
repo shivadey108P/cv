@@ -157,14 +157,13 @@ nav ul li a {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #navigation ul li {
     padding: 15px;
 }
 
-/* Hide the menu items on small screens */
 #nav-links {
     display: flex;
     justify-content: space-between;
@@ -173,10 +172,6 @@ nav ul li a {
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-}
-
-#nav-links li {
-    display: inline-block;
 }
 
 .hamburger-menu {
@@ -196,37 +191,43 @@ nav ul li a {
     transition: all 0.3s;
 }
 
-/* When the hamburger is clicked, toggle the menu */
-#nav-links.open {
-    display: flex;
-    width: 70%;
-    position: absolute;
-    top: 10px;
-    left: 40px;
-    border-radius: 12px;
-    background-color: #333;
-    border: 1px solid white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-}
 
-#nav-links li a.open {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: black;
-}
 
-#nav-links.open li {
-    display: block;
-    padding: 10px;
-}
+@media only screen and (max-width: 900px) {
 
-@media screen and (max-width: 850px) {
+    #nav-links.open li {
+        display: block;
+        padding: 10px;
+    }
+
+    #nav-links.open {
+        display: flex;
+        width: 70%;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        border-radius: 12px;
+        background-color: #333;
+        border: 1px solid white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    #nav-links li a.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: black;
+    }
+
+    * {
+        font-size: 32px;
+    }
 
     /* Show the hamburger menu */
     .hamburger-menu {
         display: block;
     }
+
 
     /* Hide the regular menu links on small screens */
     #nav-links li {
@@ -236,6 +237,7 @@ nav ul li a {
     }
 
     #nav-links.open {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
