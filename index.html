@@ -5,32 +5,75 @@
     <title>Shiva | QA Engineer & Python Developer</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
-      rel="icon"
-      href="https://github.com/shivadey108P/cv/blob/main/public/images/favicon.ico"
-      type="image/x-icon"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right"
     />
   </head>
   <body>
     <header>
-      <img
-        src="https://raw.githubusercontent.com/shivadey108P/cv/refs/heads/main/public/images/my_pic.jpg"
-        alt="my picture"
-        id="my_pic"
-      />
+      <nav id="navigation">
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <img
+          src="https://raw.githubusercontent.com/shivadey108P/cv/refs/heads/main/public/images/my_pic.jpg"
+          alt="my picture"
+          id="my_pic"
+        />
 
-      <h1>Shiva</h1>
-      <p>
-        Python Developer | Full Stack Web Developer | Cloud & AI Enthusiast AWS
-        Certified Cloud Practitioner
-      </p>
-      <a href="docs/Shiva_Resume.pdf" download>
-        <button id="downloadBtn">Download Resume</button>
-      </a>
+        <h1>Shiva</h1>
+        <p>
+          Python Developer | Full Stack Web Developer | Cloud & AI Enthusiast
+          AWS Certified Cloud Practitioner
+        </p>
+        <a
+          href="https://github.com/shivadey108P/cv/raw/refs/heads/main/assets/resume-shiva-dey.docx"
+          download
+        >
+          <button id="downloadBtn">Download Resume</button>
+        </a>
+
+        <!-- Dropdown Menu Example -->
+
+        <ul id="nav-links">
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#responsibility">Responsibilities</a></li>
+
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+              <a href="#centrica">Centrica</a>
+              <a href="#melbourne-airport">Melbourne Airport</a>
+              <a href="#iag-pegasus">IAG Pegasus</a>
+              <a href="#iag-dc-exit">IAG DC-Exit</a>
+              <a href="#smartcase">SmartCase</a>
+              <a href="#rto">RTO Status</a>
+              <a href="#refz">RefZ</a>
+              <a href="#bahs">BAHS</a>
+              <a href="#people-api">People API</a>
+            </div>
+          </li>
+
+          <li><a href="#certificate">Certifications</a></li>
+          <li><a href="#award">Awards & Recognitions</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="summary">
-      <h2>Summary</h2>
-      <p>
+    <section class="summary" id="summary">
+      <div class="heading">
+        <h2>Summary</h2>
+        <span class="material-symbols-outlined"> arrow_right </span>
+      </div>
+      <p class="summary-content">
         Automation Tester & SDET with 4+ years of progressive experience in
         designing and implementing API automation frameworks, backend job
         validation, cloud-based test automation, and AI-powered test tools.
@@ -44,357 +87,423 @@
       </p>
     </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <dl>
-        <dt><strong>AUTOMATION TESTING:</strong></dt>
-        <dd>
-          <ul>
-            <li>
-              Python (Behave, Pytest), Selenium (Python & Java), Cucumber,
-              Gherkin, Postman
-            </li>
-            <li>
-              REST & GraphQL API Automation (Requests, Postman, Entra Token,
-              Session Handling)
-            </li>
-            <li>
-              Jenkins Pipeline Automation, CI/CD Pipeline Management, Jenkins
-              Server Setup
-            </li>
-            <li>Allure, HTML Reports, Entra Token Automation</li>
-            <li>Backend Job Automation (AWS SSH, Linux Shell, Cron Jobs)</li>
-          </ul>
-        </dd>
+    <section class="skills" id="skill">
+      <div class="heading">
+        <h2>Skills</h2>
+        <span class="material-symbols-outlined"> arrow_right </span>
+      </div>
+      <div class="skill-content">
+        <dl>
+          <dt><strong>AUTOMATION TESTING:</strong></dt>
+          <dd>
+            <ul>
+              <li>
+                Python (Behave, Pytest), Selenium (Python & Java), Cucumber,
+                Gherkin, Postman
+              </li>
+              <li>
+                REST & GraphQL API Automation (Requests, Postman, Entra Token,
+                Session Handling)
+              </li>
+              <li>
+                Jenkins Pipeline Automation, CI/CD Pipeline Management, Jenkins
+                Server Setup
+              </li>
+              <li>Allure, HTML Reports, Entra Token Automation</li>
+              <li>Backend Job Automation (AWS SSH, Linux Shell, Cron Jobs)</li>
+            </ul>
+          </dd>
 
-        <dt>
-          <strong>CLOUD & DEVOPS:</strong>
-        </dt>
-        <dd>
-          <ul>
-            <li>
-              AWS (ECS, Lambda, RDS, CloudFormation, Docker, AppConfig, Cognito,
-              Glue, S3, CloudWatch Logs), boto3
-            </li>
-          </ul>
-        </dd>
-        <dt><strong>WEB DEVELOPMENT (SUPPORTIVE SKILLS):</strong></dt>
-        <dd>
-          <ul>
-            <li>
-              Python (Flask, Django), HTML, CSS, JavaScript (React, Node.js),
-              SQLAlchemy
-            </li>
-          </ul>
-        </dd>
-        <dt>
-          <strong>AI & ML TOOLS:</strong>
-        </dt>
-        <dd>
-          <ul>
-            <li>
-              OpenAI API, scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, AWS
-              Bedrock (boto3)
-            </li>
-          </ul>
-        </dd>
-        <dt>
-          <strong>DATABASES:</strong>
-        </dt>
-        <dd>
-          <ul>
-            <li>PostgreSQL, MySQL, AWS DynamoDB</li>
-            <li>
-              Automating SQL query validations, DB migration checks, and
-              integration into CI pipelines
-            </li>
-          </ul>
-        </dd>
-      </dl>
+          <dt>
+            <strong>CLOUD & DEVOPS:</strong>
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                AWS (ECS, Lambda, RDS, CloudFormation, Docker, AppConfig,
+                Cognito, Glue, S3, CloudWatch Logs), boto3
+              </li>
+            </ul>
+          </dd>
+          <dt><strong>WEB DEVELOPMENT (SUPPORTIVE SKILLS):</strong></dt>
+          <dd>
+            <ul>
+              <li>
+                Python (Flask, Django), HTML, CSS, JavaScript (React, Node.js),
+                SQLAlchemy
+              </li>
+            </ul>
+          </dd>
+          <dt>
+            <strong>AI & ML TOOLS:</strong>
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                OpenAI API, scikit-learn, Pandas, NumPy, Matplotlib, Seaborn,
+                AWS Bedrock (boto3)
+              </li>
+            </ul>
+          </dd>
+          <dt>
+            <strong>DATABASES:</strong>
+          </dt>
+          <dd>
+            <ul>
+              <li>PostgreSQL, MySQL, AWS DynamoDB</li>
+              <li>
+                Automating SQL query validations, DB migration checks, and
+                integration into CI pipelines
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
     </section>
 
-    <section class="responsibilities">
-      <h2>Core Automation Responsibilities</h2>
-      <ul>
-        <li>
-          Architected and maintained BDD and API automation frameworks using
-          Behave, Pytest, Selenium, and Cucumber.
-        </li>
-        <li>
-          Automated end-to-end and regression testing suites for cloud-hosted
-          APIs and backend services.
-        </li>
-        <li>
-          Developed dynamic Entra token generation and config validations across
-          AWS environments.
-        </li>
-        <li>
-          Integrated Allure/HTML reporting and ensured traceability to JIRA
-          acceptance criteria.
-        </li>
-        <li>
-          Performed selective manual validations for Swagger, S3, AppConfig, and
-          AWS Glue jobs.
-        </li>
-        <li>Automated cloud workflows using AWS Lambda and CloudFormation.</li>
-        <li>
-          Regular contributor to GitHub version control processes — creating
-          branches, making PRs, committing, merging, and deploying code.
-        </li>
-        <li>
-          Participated in sprint planning, DevOps integrations, and CI/CD
-          pipeline management.
-        </li>
-      </ul>
+    <section class="responsibilities" id="responsibility">
+      <div class="heading">
+        <h2>Core Automation Responsibilities</h2>
+        <span class="material-symbols-outlined"> arrow_right </span>
+      </div>
+      <div class="responsibility-content">
+        <ul>
+          <li>
+            Architected and maintained BDD and API automation frameworks using
+            Behave, Pytest, Selenium, and Cucumber.
+          </li>
+          <li>
+            Automated end-to-end and regression testing suites for cloud-hosted
+            APIs and backend services.
+          </li>
+          <li>
+            Developed dynamic Entra token generation and config validations
+            across AWS environments.
+          </li>
+          <li>
+            Integrated Allure/HTML reporting and ensured traceability to JIRA
+            acceptance criteria.
+          </li>
+          <li>
+            Performed selective manual validations for Swagger, S3, AppConfig,
+            and AWS Glue jobs.
+          </li>
+          <li>
+            Automated cloud workflows using AWS Lambda and CloudFormation.
+          </li>
+          <li>
+            Regular contributor to GitHub version control processes — creating
+            branches, making PRs, committing, merging, and deploying code.
+          </li>
+          <li>
+            Participated in sprint planning, DevOps integrations, and CI/CD
+            pipeline management.
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <h3>Key Automation Projects</h3>
-      <article>
-        <h4>Centrica (Energy & Utilities)</h4>
-        <ul>
-          <li>
-            Transitioned from Java-Selenium automation to a testing-centric
-            role, focusing on both functional and integration testing.
-          </li>
-          <li>
-            Developed and executed automated test cases for customer portal
-            features, utilizing Java Cucumber and Avanstac for behavior-driven
-            development (BDD).
-          </li>
-          <li>
-            Led API testing and validation efforts using JUnit to ensure backend
-            and front-end systems communicated smoothly.
-          </li>
-          <li>
-            Conducted regression testing to validate energy data management
-            features and sales manager profile functionality.
-          </li>
-          <li>
-            Implemented performance testing to ensure scalability under high
-            traffic, including load and stress testing.
-          </li>
-          <li>
-            Created and managed test reports to provide clear insights into
-            system performance and test outcomes.
-          </li>
-          <li>
-            <strong>Technologies:</strong> Java (Cucumber, Avanstac, JUnit),
-            Selenium, Test Reporting Tools.
-          </li>
-        </ul>
-      </article>
+    <section class="projects" id="project">
+      <div class="heading">
+        <h2>Projects</h2>
+        <span class="material-symbols-outlined"> arrow_right </span>
+      </div>
+      <div class="project-content">
+        <h3>Key Automation Projects</h3>
+        <article>
+          <h4 id="centrica">Centrica (Energy & Utilities)</h4>
+          <ul>
+            <li>
+              Transitioned from Java-Selenium automation to a testing-centric
+              role, focusing on both functional and integration testing.
+            </li>
+            <li>
+              Developed and executed automated test cases for customer portal
+              features, utilizing Java Cucumber and Avanstac for behavior-driven
+              development (BDD).
+            </li>
+            <li>
+              Led API testing and validation efforts using JUnit to ensure
+              backend and front-end systems communicated smoothly.
+            </li>
+            <li>
+              Conducted regression testing to validate energy data management
+              features and sales manager profile functionality.
+            </li>
+            <li>
+              Implemented performance testing to ensure scalability under high
+              traffic, including load and stress testing.
+            </li>
+            <li>
+              Created and managed test reports to provide clear insights into
+              system performance and test outcomes.
+            </li>
+            <li>
+              <strong>Technologies:</strong> Java (Cucumber, Avanstac, JUnit),
+              Selenium, Test Reporting Tools.
+            </li>
+          </ul>
+        </article>
 
-      <article>
-        <h4>Melbourne Airport (CRM Tool)</h4>
-        <ul>
-          <li>
-            Developed and executed comprehensive end-to-end test strategies for
-            ticket management systems and workflows.
-          </li>
-          <li>
-            Automated functional and API testing using Java-Selenium and Java
-            Cucumber, ensuring robust integration with schema-less NoSQL
-            databases.
-          </li>
-          <li>
-            Led testing for customer query management workflows, including forms
-            and bots for efficient support system interactions.
-          </li>
-          <li>
-            Validated ticket queuing and SLA tracking systems to ensure proper
-            priority handling and timely issue resolution.
-          </li>
-          <li>
-            Integrated advanced test reporting frameworks to provide real-time
-            insights into system performance and test results.
-          </li>
-          <li>
-            Conducted User Acceptance Testing (UAT) to ensure CRM system
-            features met business requirements.
-          </li>
-          <li>
-            <strong>Technologies:</strong> Java (Cucumber, Avanstac, JUnit),
-            Selenium, NoSQL, AWS ECS, Test Reporting Tools.
-          </li>
-        </ul>
-      </article>
+        <article>
+          <h4 id="melbourne-airport">Melbourne Airport (CRM Tool)</h4>
+          <ul>
+            <li>
+              Developed and executed comprehensive end-to-end test strategies
+              for ticket management systems and workflows.
+            </li>
+            <li>
+              Automated functional and API testing using Java-Selenium and Java
+              Cucumber, ensuring robust integration with schema-less NoSQL
+              databases.
+            </li>
+            <li>
+              Led testing for customer query management workflows, including
+              forms and bots for efficient support system interactions.
+            </li>
+            <li>
+              Validated ticket queuing and SLA tracking systems to ensure proper
+              priority handling and timely issue resolution.
+            </li>
+            <li>
+              Integrated advanced test reporting frameworks to provide real-time
+              insights into system performance and test results.
+            </li>
+            <li>
+              Conducted User Acceptance Testing (UAT) to ensure CRM system
+              features met business requirements.
+            </li>
+            <li>
+              <strong>Technologies:</strong> Java (Cucumber, Avanstac, JUnit),
+              Selenium, NoSQL, AWS ECS, Test Reporting Tools.
+            </li>
+          </ul>
+        </article>
 
-      <article>
-        <h4>International Airlines Group (IAG) Pegasus</h4>
-        <ul>
-          <li>
-            Automated UI workflows with Selenium (Java) and API testing via
-            Pytest.
-          </li>
-          <li>Developed and validated Flask-based microservices and APIs.</li>
-          <li>
-            Created test automation dashboards and executed backend job
-            validations via AWS SSH.
-          </li>
-          <li>
-            <strong>Tools/Skills:</strong> Selenium (Java), Pytest, Flask, AWS
-            RDS, DynamoDB.
-          </li>
-        </ul>
-      </article>
+        <article>
+          <h4 id="iag-pegasus">International Airlines Group (IAG) Pegasus</h4>
+          <ul>
+            <li>
+              Automated UI workflows with Selenium (Java) and API testing via
+              Pytest.
+            </li>
+            <li>Developed and validated Flask-based microservices and APIs.</li>
+            <li>
+              Created test automation dashboards and executed backend job
+              validations via AWS SSH.
+            </li>
+            <li>
+              <strong>Tools/Skills:</strong> Selenium (Java), Pytest, Flask, AWS
+              RDS, DynamoDB.
+            </li>
+          </ul>
+        </article>
 
-      <article>
-        <h4>IAG DC-Exit (AWS Migration)</h4>
-        <ul>
-          <li>
-            Migrated legacy British Airways applications (e.g., DSIP, DSEU,
-            Pegasus, AirOps) to AWS cloud infrastructure.
-          </li>
-          <li>
-            Loosely coupled systems for scalability, leveraging Docker and ECS
-            for containerized deployments.
-          </li>
-          <li>
-            Worked on AWS Elastic Beanstalk and CloudFormation for
-            infrastructure automation and deployment.
-          </li>
-          <li>
-            <strong>Technologies:</strong> Python (Flask, Django), AWS ECS,
-            Elastic Beanstalk, Docker, SQL, CloudFormation, AWS RDS.
-          </li>
-        </ul>
-      </article>
+        <article>
+          <h4 id="iag-dc-exit">IAG DC-Exit (AWS Migration)</h4>
+          <ul>
+            <li>
+              Migrated legacy British Airways applications (e.g., DSIP, DSEU,
+              Pegasus, AirOps) to AWS cloud infrastructure.
+            </li>
+            <li>
+              Loosely coupled systems for scalability, leveraging Docker and ECS
+              for containerized deployments.
+            </li>
+            <li>
+              Worked on AWS Elastic Beanstalk and CloudFormation for
+              infrastructure automation and deployment.
+            </li>
+            <li>
+              <strong>Technologies:</strong> Python (Flask, Django), AWS ECS,
+              Elastic Beanstalk, Docker, SQL, CloudFormation, AWS RDS.
+            </li>
+          </ul>
+        </article>
 
-      <article>
-        <h4>
-          SmartCase – AI-Powered Test Case Generator (Now Revenue-Generating)
-        </h4>
-        <ul>
-          <li>
-            Designed and built an AI-based automated test case generation tool
-            integrating OpenAI API with Java Cucumber, JUnit, and Python
-            Selenium frameworks.
-          </li>
-          <li>
-            Automated code export for test cases into Java and Python automation
-            frameworks, reducing manual effort by 70%.
-          </li>
-          <li>
-            Integrated Allure reporting (Python) and JUnit/Avanstac reports
-            (Java) for automated execution reports.
-          </li>
-          <li>
-            Managed API testing and deployment in AWS ECS and Lambda
-            environments.
-          </li>
-          <li>
-            Created data visualization dashboards using Seaborn and Matplotlib
-            for test data analytics and resource management insights.
-          </li>
-          <li><strong>GitHub:</strong> SmartCase</li>
-        </ul>
-      </article>
+        <article>
+          <h4 id="smartcase">
+            SmartCase – AI-Powered Test Case Generator (Now Revenue-Generating)
+          </h4>
+          <ul>
+            <li>
+              Designed and built an AI-based automated test case generation tool
+              integrating OpenAI API with Java Cucumber, JUnit, and Python
+              Selenium frameworks.
+            </li>
+            <li>
+              Automated code export for test cases into Java and Python
+              automation frameworks, reducing manual effort by 70%.
+            </li>
+            <li>
+              Integrated Allure reporting (Python) and JUnit/Avanstac reports
+              (Java) for automated execution reports.
+            </li>
+            <li>
+              Managed API testing and deployment in AWS ECS and Lambda
+              environments.
+            </li>
+            <li>
+              Created data visualization dashboards using Seaborn and Matplotlib
+              for test data analytics and resource management insights.
+            </li>
+            <li><strong>GitHub:</strong> SmartCase</li>
+          </ul>
+        </article>
 
-      <article>
-        <h4>RTO Status – Office Attendance Tracker (Python Flask Web App)</h4>
-        <ul>
-          <li>
-            Developed a Python Flask web application for tracking Return to
-            Office (RTO) status submissions from employees.
-          </li>
-          <li>
-            Integrated SQLite database for storing daily attendance records.
-          </li>
-          <li>
-            Designed an intuitive web interface using HTML, CSS, and Bootstrap
-            for associates to log attendance.
-          </li>
-          <li>
-            Enabled data export and visualization features using Pandas and
-            Matplotlib for management reporting.
-          </li>
-          <li>
-            <strong>Tools/Skills:</strong> Python (Flask), SQLite, Pandas,
-            Matplotlib, HTML, CSS, Bootstrap.
-          </li>
-        </ul>
-      </article>
+        <article>
+          <h4 id="rto">
+            RTO Status – Office Attendance Tracker (Python Flask Web App)
+          </h4>
+          <ul>
+            <li>
+              Developed a Python Flask web application for tracking Return to
+              Office (RTO) status submissions from employees.
+            </li>
+            <li>
+              Integrated SQLite database for storing daily attendance records.
+            </li>
+            <li>
+              Designed an intuitive web interface using HTML, CSS, and Bootstrap
+              for associates to log attendance.
+            </li>
+            <li>
+              Enabled data export and visualization features using Pandas and
+              Matplotlib for management reporting.
+            </li>
+            <li>
+              <strong>Tools/Skills:</strong> Python (Flask), SQLite, Pandas,
+              Matplotlib, HTML, CSS, Bootstrap.
+            </li>
+          </ul>
+        </article>
 
-      <article>
-        <h4>RefZ (Referencing Portal)</h4>
-        <ul>
-          <li>Test Lead: Managed automation and testing responsibilities.</li>
-          <li>
-            Developed and maintained a BDD API automation framework using Python
-            Behave (Cucumber).
-          </li>
-          <li>
-            Automated token-based authentication, mock response handling, and
-            negative scenarios across AWS environments (DEV, UAT, PROD).
-          </li>
-          <li>
-            Delivered clear test reports via Allure & HTML Reports, fully
-            traceable through JIRA acceptance criteria.
-          </li>
-          <li>
-            Collaborated with developers, raised bugs in JIRA, and provided test
-            exit reports and test plans.
-          </li>
-        </ul>
-      </article>
+        <article>
+          <h4 id="refz">RefZ (Referencing Portal)</h4>
+          <ul>
+            <li>Test Lead: Managed automation and testing responsibilities.</li>
+            <li>
+              Developed and maintained a BDD API automation framework using
+              Python Behave (Cucumber).
+            </li>
+            <li>
+              Automated token-based authentication, mock response handling, and
+              negative scenarios across AWS environments (DEV, UAT, PROD).
+            </li>
+            <li>
+              Delivered clear test reports via Allure & HTML Reports, fully
+              traceable through JIRA acceptance criteria.
+            </li>
+            <li>
+              Collaborated with developers, raised bugs in JIRA, and provided
+              test exit reports and test plans.
+            </li>
+          </ul>
+        </article>
 
-      <article>
-        <h4>BAHS (British Airways Health Services)</h4>
-        <ul>
-          <li>Test Lead: Oversaw all testing processes for the project.</li>
-          <li>
-            Automated health services API modules covering positive, negative,
-            and config-based scenarios.
-          </li>
-          <li>
-            Designed dynamic Entra token generation and AWS Lambda-driven tests.
-          </li>
-          <li>
-            Developed Allure and HTML reporting dashboards for JIRA
-            stakeholders.
-          </li>
-          <li>
-            Participated in client meetings, ensuring software quality and
-            providing test approvals.
-          </li>
-        </ul>
-      </article>
+        <article>
+          <h4 id="bahs">BAHS (British Airways Health Services)</h4>
+          <ul>
+            <li>Test Lead: Oversaw all testing processes for the project.</li>
+            <li>
+              Automated health services API modules covering positive, negative,
+              and config-based scenarios.
+            </li>
+            <li>
+              Designed dynamic Entra token generation and AWS Lambda-driven
+              tests.
+            </li>
+            <li>
+              Developed Allure and HTML reporting dashboards for JIRA
+              stakeholders.
+            </li>
+            <li>
+              Participated in client meetings, ensuring software quality and
+              providing test approvals.
+            </li>
+          </ul>
+        </article>
 
-      <article>
-        <h4>People API (Employee Data Management)</h4>
+        <article>
+          <h4 id="people-api">People API (Employee Data Management)</h4>
+          <ul>
+            <li>
+              Test Lead: Led the testing strategy for this project, including
+              API security and cyber assurance.
+            </li>
+            <li>
+              Created a scalable API automation framework in Python Behave with
+              Gherkin.
+            </li>
+            <li>
+              Automated API scenarios including token validations, data
+              integrity, negative case validation.
+            </li>
+            <li>
+              Participated in cyber assurance of APIs and validated APIs against
+              Swagger contracts.
+            </li>
+            <li>
+              Integrated test results with JIRA workflows and ensured AWS
+              Cognito, AppConfig validations.
+            </li>
+            <li>
+              Managed Jenkins server for automation in PeopleAPI project and
+              worked with Swagger for API contract validation.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="certifications" id="certificate">
+      <div class="heading">
+        <h2>Certifications</h2>
+        <span class="material-symbols-outlined"> arrow_right </span>
+      </div>
+      <div class="certificate-content">
         <ul>
           <li>
-            Test Lead: Led the testing strategy for this project, including API
-            security and cyber assurance.
+            AWS Certified Cloud Practitioner (Credential ID:
+            9ddc675bcebd470fb458b0207b112c75) -
+            <a
+              href="https://www.credly.com/badges/9ddc675bcebd470fb458b0207b112c75"
+              target="_blank"
+              >Verify Certification</a
+            >
           </li>
           <li>
-            Created a scalable API automation framework in Python Behave with
-            Gherkin.
-          </li>
-          <li>
-            Automated API scenarios including token validations, data integrity,
-            negative case validation.
-          </li>
-          <li>
-            Participated in cyber assurance of APIs and validated APIs against
-            Swagger contracts.
-          </li>
-          <li>
-            Integrated test results with JIRA workflows and ensured AWS Cognito,
-            AppConfig validations.
-          </li>
-          <li>
-            Managed Jenkins server for automation in PeopleAPI project and
-            worked with Swagger for API contract validation.
+            Udemy: Python 100 Days, 100 Projects Challenge (GitHub Projects) -
+            <a
+              href="https://github.com/shivadey108P/python_projects"
+              target="_blank"
+              >View Projects</a
+            >
           </li>
         </ul>
-      </article>
+      </div>
+    </section>
+
+    <section class="honor" id="award">
+      <div class="heading">
+        <h2>Awards & Recognitions</h2>
+        <span class="material-symbols-outlined"> arrow_right </span>
+      </div>
+      <div class="award-content">
+        <ul>
+          <li>
+            Mr. Technoment: Recognized for mentoring juniors in Android and web
+            development.
+          </li>
+          <li>
+            1st Prize, Android App Development (Bhavan's Vivekananda College).
+          </li>
+        </ul>
+      </div>
     </section>
 
     <footer>
-      <p>&copy; 2025 Shiva | Built with 💻 & ☕</p>
+      <p>&copy; <span id="year"></span> Shiva Dey | Built with 💻 & ☕</p>
     </footer>
     <script defer src="scripts/script.js"></script>
   </body>
